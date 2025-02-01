@@ -15,7 +15,7 @@
   }
 body {
     background-image: url('images/pattern-background-mobile.svg');
-    background-color: var(--Very-pale-blue);
+    background-color: var(--Very-dark-blue-main);
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
@@ -29,6 +29,7 @@ body {
     color: var(--Soft-blue);
     margin: 0;
 }
+hr {border-color: var(--Very-dark-blue-line);}
 #card {
     max-width: 300px;
     height: 546px;
