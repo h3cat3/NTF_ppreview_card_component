@@ -1,0 +1,114 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    
+    
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(fonts/Outfit/Outfit-VariableFont_wght.ttf);
+  }
+body {
+    background-image: url('images/pattern-background-mobile.svg');
+    background-color: var(--Very-pale-blue);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    color: var(--Soft-blue);
+    margin: 0;
+}
+#card {
+    max-width: 300px;
+    height: 546px;
+    background-color: var(--Very-dark-blue-card);
+    border-radius: 20px;
+    padding: 25px;
+}
+/*the 2 images are inside a div with a fix height to not pushe the text down*/
+.image {
+    height: 300px;
+}
+.hero {
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    
+}
+.cover {
+    position: relative;
+    background-color: var(--Cyan);
+    top: -305px;
+    width: 60px;
+   
+    padding: 120px;
+   border-radius: 20px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.5s ease;
+  }
+  .hero:hover + .cover {
+    opacity: 40%;
+    z-index: 2;
+  }
+/*the product name changes color when hovered*/
+.product {
+    font-size: 1.36rem;
+    font-weight: 600;
+    color: var(--White);
+}
+.description {
+    font-size: 1.12rem;
+    font-weight: 400;
+}
+
+/*the price and ofer lenght*/
+.ofer {
+    display: flex;
+    justify-content: space-between;
+height: 45px;
+}
+.line {
+    display: flex;
+    align-items: center;
+}
+.line img {
+    height: 1rem;
+    padding-right: 8px; 
+}
+.price{
+    color: var(--Cyan);
+} 
+.name {
+    color: var(--White);
+}
+
+
+.artist {
+    display: flex;
+    align-items: center;
+}
+.avatar {
+    width: 35px;
+    height: 35px;
+    padding-right: 15px;
+}
+
+
+
+
+.product:hover, .name:hover {
+    color: var(--Cyan);
+}
