@@ -66,6 +66,7 @@ hr {border-color: var(--Very-dark-blue-line);}
   }
 /*the product name changes color when hovered*/
 .product {
+    margin: 24px 0;
     font-size: 1.36rem;
     font-weight: 600;
     color: var(--White);
